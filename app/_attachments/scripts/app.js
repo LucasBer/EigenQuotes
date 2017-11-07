@@ -60,7 +60,7 @@ angular.module('QuotesApp', ['ngRoute'])
                 ]
                }, {
                 'id': 1,
-                'quotes': ["send bobs yes mor pls cloth off vagen","hmm yes i like very much more bob sex"]
+                'quotes': ["Quote 3","Quote 4"]
                }];
     		for (var j = 0; j < quotes.length; j++){
     			if (quotes[j].id == person.id){
