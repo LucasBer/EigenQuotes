@@ -20,7 +20,9 @@ angular.module('QuotesApp', ['ngRoute'])
                 redirectTo: '/home'
             });
     })
-    .controller('homeCtrl', function($scope){})
+    .controller('homeCtrl', function($scope, getObjectServ){
+    	getObjectServ.getObject();
+    })
     .controller('personsCtrl', function($scope, personsServ){
     	$scope.persons = personsServ.getAllPersons(); 
     })
@@ -68,5 +70,12 @@ angular.module('QuotesApp', ['ngRoute'])
     			}
     		}
     		return null;
+    	}
+    })
+    .service('getObjectServ', function ($http){
+    	this.getObject = function(){
+    		$.get('../../../index', function(data){
+    			console.log(data);
+    		})
     	}
     });
