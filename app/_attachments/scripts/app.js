@@ -55,8 +55,8 @@ angular.module('QuotesApp', ['ngRoute'])
     	this.AllQuotes = function (person){
     		var quotes = [{
                 'id': 0,
-                'quotes': ["America for White, Africa for Black, send those apes back to the trees, ship those niggers back.",
-                    "We don't want niggers in our schools. We're not for integration. Keep those niggers in their place, we'll have a better nation."
+                'quotes': ["Quote 1",
+                    "Quote 2"
                 ]
                }, {
                 'id': 1,
