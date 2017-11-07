@@ -32,10 +32,10 @@ angular.module('QuotesApp', ['ngRoute'])
     .service('personsServ', function(){
     	var persons = [{
             'id': 0,
-            'name': 'Johnny Rebel'
+            'name': 'Person 1'
         }, {
             'id': 1,
-            'name': 'Ghandi'
+            'name': 'Person 2'
         }];
     	return {
     	getAllPersons : function() {
